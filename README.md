@@ -1,4 +1,4 @@
-silaTranslator là ứng dụng máy bàn sử dụng AI để Dịch trang web & tài liệu PDF, chuyên cho nhiệm vụ dịch từ tiếng Anh sang tiếng Việt.
+silaTranslator là ứng dụng máy bàn sử dụng Gemini AI để Dịch trang web & tài liệu PDF, chuyên cho nhiệm vụ dịch từ tiếng Anh sang tiếng Việt.
 
 Link tải ứng dụng: https://cdn.silatranslator.org/silaTranslator.rar
 
@@ -11,5 +11,6 @@ Bản dịch sẽ được lưu ở định dạng mà bạn có thể đọc đ
 silaTranslator chỉ cài đặt được trên máy tính để bàn / laptop dùng hệ điều hành Windows 10+ (nghĩa là Windows 10, hoặc các phiên bản cao hơn đều cài được).
 
 Người dùng thông thường chỉ cần tham khảo phần ‘Khởi Động‘ [https://silatranslator.org/category/khoi-dong/] & ‘Chạy Ứng Dụng‘ [https://silatranslator.org/category/chay-ung-dung/] là đủ để dùng.
+
 
 
