@@ -1,0 +1,15 @@
+{
+    "require": {
+        "fivefilters/readability.php": ">=3.0",
+        "ezyang/htmlpurifier": "^4.18",
+        "symfony/panther": "^2.2",
+        "html2text/html2text": "^4.3",
+        "symfony/process": "^6.4",
+        "guzzlehttp/guzzle": "^7.9",
+        "league/html-to-markdown": "^5.1",
+        "league/commonmark": "^2.6"
+    },
+    "require-dev": {
+        "dbrekelmans/bdi": "^1.4"
+    }
+}
