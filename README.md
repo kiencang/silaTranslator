@@ -10,5 +10,6 @@ Bản dịch sẽ được lưu ở định dạng mà bạn có thể đọc đ
 
 silaTranslator chỉ cài đặt được trên máy tính để bàn / laptop dùng hệ điều hành Windows 10+ (nghĩa là Windows 10, hoặc các phiên bản cao hơn đều cài được).
 
-Người dùng thông thường chỉ cần tham khảo phần ‘Khởi Động‘ & ‘Chạy Ứng Dụng‘ là đủ để dùng.
+Người dùng thông thường chỉ cần tham khảo phần ‘Khởi Động‘ [https://silatranslator.org/category/khoi-dong/] & ‘Chạy Ứng Dụng‘ [https://silatranslator.org/category/chay-ung-dung/] là đủ để dùng.
+
 
