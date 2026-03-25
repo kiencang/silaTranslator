@@ -1,10 +1,10 @@
 **Nhiệm vụ Chính**: Dựa trên vai trò và các nguyên tắc hoạt động đã được định nghĩa chi tiết trong System Instructions (SI) nâng cao của bạn, hãy thực hiện:
 
-1.  **Dịch thuật Anh-Việt**: Dịch **cực kỳ chính xác về ý nghĩa** và **tuyệt đối tự nhiên về văn phong tiếng Việt** toàn bộ **nội dung văn bản có thể đọc được** và các thành phần có ngữ nghĩa (như alt text cho ảnh) từ tài liệu PDF tiếng Anh được cung cấp. **TUÂN THỦ NGHIÊM NGẶT Ưu tiên #1 và #2** trong SI, đặc biệt là yêu cầu **tái cấu trúc câu/đoạn một cách quyết liệt và sáng tạo**.
-2.  **Tái tạo sang HTML**: Trình bày bản dịch dưới dạng một **đoạn mã HTML thô hoàn chỉnh và ngữ nghĩa**. **Nỗ lực tối đa (best-effort)** để **bảo toàn layout và định dạng gốc** của PDF bằng HTML/CSS, nhưng **TUYỆT ĐỐI KHÔNG VI PHẠM Ưu tiên #3 (Tránh vỡ layout/Đảm bảo đọc được)** và luôn tuân thủ **Thứ tự Ưu tiên**, **Quy tắc Giải quyết Xung đột**, và các hướng dẫn xử lý yếu tố đặc biệt (ảnh, bảng, cột, header/footer, accessibility) trong SI.
+1.  **Dịch thuật Anh-Việt**: Dịch **cực kỳ chính xác về ý nghĩa** và **tuyệt đối tự nhiên về văn phong tiếng Việt** toàn bộ **nội dung văn bản có thể đọc được** và các thành phần có ngữ nghĩa (như alt text cho ảnh) từ tài liệu PDF tiếng Anh được cung cấp. **TUÂN THỦ NGHIÊM NGẶT Ưu tiên #1 và Ưu tiên #2** trong SI, đặc biệt là yêu cầu **tái cấu trúc câu/đoạn một cách quyết liệt và sáng tạo**.
+2.  **Tái tạo sang HTML**: Trình bày bản dịch dưới dạng một **đoạn mã HTML thô hoàn chỉnh và ngữ nghĩa (semantic HTML)**. **Nỗ lực tối đa (best-effort)** để **bảo toàn layout và định dạng gốc** của PDF bằng HTML/CSS, nhưng **TUYỆT ĐỐI KHÔNG VI PHẠM Ưu tiên #3 (Tránh vỡ layout/Đảm bảo đọc được)** và luôn tuân thủ **Thứ tự Ưu tiên KHÔNG THAY ĐỔI (Khi có Xung đột)**, **Quy tắc Giải quyết Xung đột**, và các hướng dẫn xử lý yếu tố đặc biệt (ảnh, bảng, cột, sơ đồ, biểu đồ, công thức toán học, tài liệu tham khảo, header/footer, bố cục chung của bản dịch, accessibility) trong SI.
 
 **Đầu vào**: Tài liệu PDF tiếng Anh.
-**Đầu ra**: Một đoạn mã HTML thô hoàn chỉnh, **không chứa bất kỳ văn bản nào khác ngoài mã HTML đó** (không lời dẫn, không giải thích, không markdown bao quanh như ```html).
+**Đầu ra**: Một đoạn mã HTML thô hoàn chỉnh, **không chứa bất kỳ văn bản nào khác ngoài mã HTML đó** (không lời dẫn, không giải thích, không markdown bao quanh).
 
 ---
 **## Yêu cầu TUYỆT ĐỐI (Không được vi phạm):**
@@ -13,9 +13,9 @@
 2.  **Định dạng Output**: **CHỈ MÃ HTML THÔ.**
 3.  **Chất lượng Dịch thuật (NHẮC LẠI ƯU TIÊN CAO NHẤT):**
     *   **#1: CHÍNH XÁC Ý NGHĨA.**
-    *   **#1A: CHÍNH XÁC VÀ CHUẨN HÓA THUẬT NGỮ CHUYÊN NGÀNH (Đặc biệt cho tài liệu khoa học):** Tuân thủ nghiêm ngặt các hướng dẫn chi tiết trong Mục 3 của SI về xử lý thuật ngữ (ưu tiên thuật ngữ Việt chuẩn hóa, giữ nguyên gốc nếu không chắc/không có, giải thích lần đầu nếu cần, nhất quán tuyệt đối).
+    *   **#1A: CHÍNH XÁC VÀ CHUẨN HÓA THUẬT NGỮ CHUYÊN NGÀNH (Đặc biệt cho tài liệu khoa học):** Tuân thủ nghiêm ngặt các hướng dẫn chi tiết trong Mục 4 của SI về xử lý thuật ngữ (ưu tiên thuật ngữ Việt chuẩn hóa, giữ nguyên gốc nếu không chắc/không có, giải thích lần đầu nếu cần, nhất quán tuyệt đối).
     *   **#2: TIẾNG VIỆT TỰ NHIÊN TUYỆT ĐỐI (Bao gồm TÁI CẤU TRÚC MẠNH MẼ).**
-        *   **Ưu tiên giọng chủ động**: Ưu tiên **chuyển đổi câu bị động tiếng Anh sang câu chủ động tiếng Việt** nếu phù hợp và làm tăng tính tự nhiên, trừ khi ngữ cảnh yêu cầu giữ sắc thái bị động.
+        *   **Ưu tiên giọng chủ động (Có điều kiện):** Ưu tiên chuyển đổi câu bị động sang chủ động nếu phù hợp. **TUY NHIÊN, đối với tài liệu KHOA HỌC/KỸ THUẬT, hãy duy trì cấu trúc bị động (ví dụ: "được tiến hành", "được đo lường") nếu việc này giúp bảo đảm tính khách quan của thực nghiệm và giữ trọng tâm vào đối tượng nghiên cứu thay vì người thực hiện.**
         *   *Ví dụ Tái cấu trúc (Nhấn mạnh lại tầm quan trọng: Bạn hãy thấm nhuần tư duy này và áp dụng một cách sáng tạo, quyết liệt cho TOÀN BỘ bản dịch. Hãy thoát ly hoàn toàn khỏi cấu trúc câu tiếng Anh gốc, ưu tiên hàng đầu cho sự mạch lạc, tự nhiên và dễ hiểu trong tiếng Việt):*
 
             1.  `Gốc`: `The system requires **immediate attention** due to a critical error.`
@@ -80,9 +80,9 @@
         *   **Lưu ý khi AI áp dụng (nhắc lại và nhấn mạnh thêm):**
             *   **Ưu tiên tuyệt đối ý nghĩa gốc:** Mọi sự tái cấu trúc phải xuất phát từ việc hiểu chính xác 100% ý định và sắc thái của câu gốc.
             *   **Mạnh dạn và sáng tạo:** Đừng ngần ngại phá vỡ hoàn toàn cấu trúc ngữ pháp Anh. Hãy tư duy như một người viết tiếng Việt thực thụ, tìm cách diễn đạt ý tưởng đó một cách tự nhiên và hiệu quả nhất trong tiếng Việt.
-            *   **Ngữ điệu và dòng chảy:** Chú ý đến nhịp điệu, sự trôi chảy của câu văn tiếng Việt. Đôi khi việc tách một câu dài thành hai câu ngắn hoặc nối hai câu ngắn lại có thể giúp cải thiện điều này.
+            *   **Ngữ điệu và sự trôi chảy:** Chú ý đến nhịp điệu, sự trôi chảy của câu văn tiếng Việt. Đôi khi việc tách một câu dài thành hai câu ngắn hoặc nối hai câu ngắn lại có thể giúp cải thiện điều này.
             *   **Lựa chọn từ đồng nghĩa/gần nghĩa:** Cân nhắc các từ đồng nghĩa hoặc gần nghĩa để tìm ra từ phù hợp nhất với ngữ cảnh và văn phong của tài liệu. Ví dụ: "understand" có thể dịch là "hiểu rõ", "nắm vững", "thông hiểu", "thấu suốt" tùy sắc thái.
-            *   **Tránh lặp từ/cấu trúc:** Nếu một cấu trúc câu tiếng Anh lặp lại nhiều lần, hãy cố gắng đa dạng hóa cách diễn đạt trong tiếng Việt.
+            *   **Tránh lặp từ/cấu trúc:** Nếu một cấu trúc câu tiếng Anh lặp lại nhiều lần, hãy cố gắng đa dạng hóa cách diễn đạt trong tiếng Việt. Các từ/cụm từ thông thường có thể đa dạng hóa cách dịch, nhưng các từ/cụm từ chuyên ngành (thuật ngữ) cần cách dịch thống nhất.
             *   **Kiểm tra lại sau khi dịch:** Luôn đọc lại bản dịch tiếng Việt một cách độc lập để đảm bảo nó thực sự tự nhiên, dễ hiểu và không còn "dấu vết" của câu gốc tiếng Anh.
 
 4.  **Xử lý Layout, Định dạng & Cấu trúc HTML (NHẮC LẠI ƯU TIÊN KỸ THUẬT):**
@@ -94,20 +94,23 @@
     *   Xử lý **Bảng biểu (`<table>`)**: Đảm bảo **cấu trúc ngữ nghĩa** (`thead`, `tbody`, `th`, `td`), đơn giản hóa nếu cần để dễ đọc.
     *   Xử lý **Header/Footer**: Tích hợp hợp lý, không gây xáo trộn.
     *   Đảm bảo **HTML ngữ nghĩa** (semantic HTML) và tuân thủ **accessibility cơ bản** (cấu trúc heading, alt text, table headers).
+	*   **Tinh chỉnh Typography (Tùy chọn):** Trong khối `<style>`, hãy cân nhắc thêm các thuộc tính xử lý ngắt trang/ngắt cột cơ bản cho thẻ `<p>` (ví dụ: `orphans: 2; widows: 2;` hoặc `3`) để đảm bảo các đoạn văn không bị đứt gãy mồ côi/góa phụ khi người dùng in tài liệu hoặc xem trên các thiết bị có kích thước màn hình đặc thù, tăng tối đa tính chuyên nghiệp cho bản dịch.
+	
+5.  **Xử lý Biểu thức và Công thức Toán học**: Đảm bảo **TUÂN THỦ TUYỆT ĐỐI CHÍNH XÁC** hướng dẫn nêu trong SI.
 
-5.  **Xử lý Tài liệu Tham khảo (References/Bibliography)**: **TUÂN THỦ NGHIÊM NGẶT** các quy tắc trong SI: **KHÔNG dịch** tên tác giả, tiêu đề (bài báo, sách, tạp chí), nhà xuất bản, thông tin xuất bản, DOI, URL. **Chỉ dịch** các ghi chú/bình luận do tác giả gốc viết thêm (nếu có). **Bảo toàn định dạng gốc** (đậm, nghiêng, cấu trúc list) và **đảm bảo DOI/URL là link hoạt động**.
+6.  **Xử lý Tài liệu Tham khảo (References/Bibliography)**: **TUÂN THỦ NGHIÊM NGẶT** các quy tắc trong SI: **KHÔNG dịch** tên tác giả, tiêu đề (bài báo, sách, tạp chí), nhà xuất bản, thông tin xuất bản, DOI, URL. **Chỉ dịch** các ghi chú/bình luận do tác giả gốc viết thêm (nếu có). **Bảo toàn định dạng gốc** (đậm, nghiêng, cấu trúc list) và **đảm bảo DOI/URL là link hoạt động**.
 
 ---
 **## Quy trình Thực hiện & KIỂM TRA CUỐI CÙNG (Bắt buộc):**
 
-1.  **Phân tích PDF Toàn diện**: Hiểu rõ nội dung, cấu trúc logic, layout, định dạng, hình ảnh, bảng biểu.
+1.  **Phân tích PDF Toàn diện**: Hiểu rõ nội dung, cấu trúc logic, layout, định dạng, hình ảnh, bảng biểu, sơ đồ, biểu đồ, công thức toán học.
 2.  **Dịch thuật Tập trung (Ưu tiên #1, #1A & #2)**: Tạo bản dịch tiếng Việt chuẩn xác, tự nhiên nhất, tái cấu trúc không khoan nhượng. Xác định nội dung cho `alt` text của ảnh.
-3.  **Tạo HTML/CSS Ngữ nghĩa & Accessibile (Ưu tiên #3 & #4)**: Xây dựng cấu trúc HTML ngữ nghĩa, nhúng bản dịch, tích hợp ảnh (`<img>` với `alt`), bảng (`<table>`), áp dụng CSS để cố gắng tái tạo giao diện gốc. **Luôn kiểm soát chặt chẽ** để không vỡ layout và đảm bảo khả năng truy cập cơ bản. Xử lý các yếu tố đặc biệt (ảnh, cột, header/footer, bảng phức tạp) theo đúng hướng dẫn SI. Giải quyết xung đột theo đúng thứ tự ưu tiên và quy tắc trong SI.
+3.  **Tạo HTML/CSS Ngữ nghĩa & Accessibile (Ưu tiên #3 & #4)**: Xây dựng cấu trúc HTML ngữ nghĩa, nhúng bản dịch, tích hợp ảnh (`<img>` với `alt`), bảng (`<table>`), áp dụng CSS để cố gắng tái tạo giao diện gốc. **Luôn kiểm soát chặt chẽ** để không vỡ layout và đảm bảo khả năng truy cập cơ bản. Xử lý các yếu tố đặc biệt (ảnh, cột, header/footer, bảng phức tạp, công thức toán học) theo đúng hướng dẫn SI. Giải quyết xung đột theo đúng thứ tự ưu tiên và quy tắc trong SI.
 4.  **KIỂM TRA CHẤT LƯỢNG TOÀN DIỆN (CỰC KỲ QUAN TRỌNG):**
     *   Đọc lại **TOÀN BỘ nội dung tiếng Việt** trong mã HTML được tạo ra (bao gồm cả `alt` text nếu có thể xem được).
     *   **Tự vấn nghiêm khắc dựa trên các Nguyên tắc và Yêu cầu trong SI & Prompt**:
         *   "Ý nghĩa có **chính xác 100%** so với gốc không?" (Ưu tiên #1)
-        *   "Các **thuật ngữ chuyên ngành** đã được xử lý **chính xác, chuẩn hóa, và nhất quán** theo Mục 3 của SI chưa (ví dụ: dùng từ Việt chuẩn, giữ nguyên gốc kèm giải thích nếu cần)?" (Ưu tiên #1A)
+        *   "Các **thuật ngữ chuyên ngành** đã được xử lý **chính xác, chuẩn hóa, và nhất quán** theo Mục 4 của SI chưa (ví dụ: dùng từ Việt chuẩn, giữ nguyên gốc kèm giải thích nếu cần)?" (Ưu tiên #1A)
         *   "Văn phong có **hoàn toàn tự nhiên, mượt mà như người Việt viết** không? Còn chút gượng gạo nào không?" (Ưu tiên #2)
         *   "Giọng văn, cách diễn đạt chung (ngoài thuật ngữ) có **nhất quán và phù hợp** không?"
         *   "Bố cục HTML có **rõ ràng, dễ đọc, không bị lỗi hiển thị** (chồng chéo, tràn, ẩn...) không?" (Ưu tiên #3)
@@ -123,4 +126,4 @@
 5.  **Kiểm tra Kỹ thuật Cuối**: Đảm bảo mã HTML cơ bản hợp lệ, không có lỗi cú pháp và chỉ chứa mã HTML.
 
 ---
-**Định dạng Output Cuối cùng:** **Chỉ trả về mã HTML thô.** Hãy đảm bảo kết quả cuối cùng thể hiện năng lực tốt nhất của bạn dựa trên những chỉ dẫn cực kỳ chi tiết này.
+**Định dạng Output Cuối cùng:** **Chỉ trả về mã HTML thô.** Output BẮT ĐẦU bằng `<!DOCTYPE html>` và KẾT THÚC bằng `</html>`. **(LƯU Ý: Đừng quên nhúng script CDN của MathJax vào thẻ `<head>` để render công thức toán).** Hãy đảm bảo kết quả cuối cùng thể hiện năng lực tốt nhất của bạn dựa trên những chỉ dẫn cực kỳ chi tiết này.
