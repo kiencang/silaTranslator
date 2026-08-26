@@ -12,5 +12,13 @@ silaTranslator chỉ cài đặt được trên máy tính để bàn / laptop d
 
 Người dùng thông thường chỉ cần tham khảo phần ‘Khởi Động‘ [https://silatranslator.org/category/khoi-dong/] & ‘Chạy Ứng Dụng‘ [https://silatranslator.org/category/chay-ung-dung/] là đủ để dùng.
 
+## Phiên bản trực tuyến tiện dùng hơn
+Ứng dụng này hiện có các phiên bản trực tuyến tiện dùng hơn, mở rộng chức năng và có thể tận dụng được API miễn phí từ Gemini:
+- Dịch Web: https://github.com/kiencang/3W-silaTranslator
+- Dịch PDF ngắn: https://github.com/kiencang/PDF-silaTranslator
+- Dịch sách: https://github.com/kiencang/silaBook
+- Dịch phụ đề YouTube: https://github.com/kiencang/silaSub
+
+
 
 
